@@ -38,4 +38,20 @@
   console.log('函数抛错则函数的返回值应为never类型')
   console.log('函数里是死循环则函数的返回值应为never类型')
   console.log('never类型的值可以赋值给其他任意类型，但是其他任意类型的值不能赋值给never')
+
+  // object
+  const fn = (obj: object): void => {
+    console.log('obj: object\n', obj)
+  }
+  fn({})
+
+  // 类型断言
+  const fn2 = (target: string | number): number => {
+    if ((<string>target).length) { // 写法1
+      return (target as string).length // 写法2 推荐
+    } else {
+      return target.toString().length
+    }
+  }
+  console.log('类型断言', fn2(1234))
 }
