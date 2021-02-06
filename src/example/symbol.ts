@@ -13,7 +13,7 @@
   console.log(Symbol('h') === Symbol('h')) // false
   console.log(Symbol.for('h2') === Symbol.for('h2')) // true
   console.log(Symbol.keyFor(Symbol.for('hello'))) // hello 可以拿到用for创建的symbol类型数据的描述
-  // console.log(Symbol.for('hello1').description) // hello1 js里可以直接这样用 ts里会报错
-  // console.log(Symbol('hello2').description) // hello2 js里可以直接这样用 ts里会报错
+  // console.log(Symbol.for('hello1').description) // hello1 js里可以直接这样用 ts里会报错说属性不存在
+  // console.log(Symbol('hello2').description) // hello2 js里可以直接这样用 ts里会报错说属性不存在
   console.log('Symbol的值是唯一的\n', obj, obj[s])
 }
