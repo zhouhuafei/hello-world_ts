@@ -28,6 +28,9 @@
   console.log('ENUM.RUNNING', ENUM.RUNNING)
   console.log('ENUM[5]', ENUM[5])
 
+  // any
+  console.log('any类型表示没有类型限制，相当于是写js')
+
   // void
   console.log('函数没有返回值则默认返回值是undefined则返回值应为void类型，undefined可以赋值给void类型')
 
