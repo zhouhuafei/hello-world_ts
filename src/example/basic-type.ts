@@ -1,5 +1,5 @@
 {
-  console.log('-----------------------')
+  console.log('-----------------------basic-type')
   let boolean: boolean = false
   console.log('let boolean: boolean\n', boolean)
   let array: number[] = [1, 2, 3]

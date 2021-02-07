@@ -1,5 +1,5 @@
 {
-  console.log('-----------------------')
+  console.log('-----------------------symbol')
   const s = Symbol('myFirstSymbol')
   console.log(`Symbol('myFirstSymbol')\n`, s)
   const obj = { [s]: 'hello world', name: 'name' }
