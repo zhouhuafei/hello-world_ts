@@ -95,4 +95,27 @@
   c()
   c()
   console.log(c.count)
+
+  // 高级类型 - https://www.bilibili.com/video/BV1LE411R7Ht?p=13
+  interface MyInterface {
+    a: number,
+    b: string,
+
+    [prop: string]: any
+  }
+
+  type a = MyInterface[keyof MyInterface]
+
+  type MyReadonly<T> = {
+    readonly [K in keyof T]: T[K]
+  }
+
+  type MyInterfaceAddReadonly = MyReadonly<MyInterface>
+
+  let myObj: MyInterfaceAddReadonly = {
+    a: 1,
+    b: 'b',
+    c: 'c'
+  }
+  // myObj.a = 2 // Cannot assign to 'a' because it is a read-only property.
 }
