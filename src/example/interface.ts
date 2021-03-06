@@ -95,4 +95,11 @@
   c()
   c()
   console.log(c.count)
+
+  // 联合类型（|） 和 交叉类型（&）
+  var hello: string | number
+  hello = 1
+  hello = 'a'
+  var world: { a: string } & { b: number }
+  world = { a: 'a', b: 2 }
 }
